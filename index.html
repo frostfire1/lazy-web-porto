@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frostfire | Portofolio Page</title>
+    <meta name="description" content="Muhammad Zuhair Zuhdi Website portofolio">
+<link rel="icon" href="./icon.png">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevent scrollbars */
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <iframe id="iframe" src="https://frostfire.framer.website/"></iframe>
+    <script>
+        function resizeIframe() {
+            var iframe = document.getElementById('iframe');
+            var width = window.innerWidth || document.documentElement.clientWidth;
+            var height = window.innerHeight || document.documentElement.clientHeight;
+            iframe.style.width = width + 'px';
+            iframe.style.height = height + 'px';
+        }
+        window.onresize = resizeIframe;
+        resizeIframe(); // Call the function initially
+    </script>
+</body>
+</html>
